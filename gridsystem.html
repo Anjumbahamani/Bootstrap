@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-6">Column 1</div>
+      <div class="col-6">Column 2</div>
+    </div>
+
+    <div class="container border border-primary mt-5">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">Name</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">Service</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">ABout</div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">Contact</div>
+      </div>
+    </div>
+    <!--On extra small screens (col-12), each column takes up the full width (12 columns).
+      On small screens (col-sm-6), each column takes up half the width (6 columns each).
+      On medium screens (col-md-4), each column takes up one-third of the width (4 columns each).
+      On large screens (col-lg-3), each column takes up one-quarter of the width (3 columns each).-->
+
+
+      <div class="row mt-5">
+        <div class="col-md-6 offset-md-4">Centered Column</div>
+      </div>
+      
+<!--
+     Offsets:
+You can create space before a column by using the .offset-* classes. These are helpful when you want to push columns to the right without affecting the others. 
+
+-->
+<div class="container text-center">
+  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+  <div class="row">
+    <div class="col-md-8">.col-md-8</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+  </div>
+
+  <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+  <div class="row">
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+  </div>
+
+  <!-- Columns are always 50% wide, on mobile and desktop -->
+  <div class="row">
+    <div class="col-6">.col-6</div>
+    <div class="col-6">.col-6</div>
+  </div>
+</div>
+
+
+
+<div class="container text-center bg-info">
+  <div class="row row-cols-4">
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+    <div class="col-6">Anything</div>
+    <div class="col">Column</div>
+  </div>
+</div>
+
+
+
+
+<div class="container text-center mt-5">
+  <div class="row bg-danger">
+    <div class="col">1 of 3</div>
+    <div class="col-6">2 0f 3 columns(wider)</div>
+    <div class="col">1 of 3</div>
+  </div>
+  <div class="row bg-info">
+    <div class="col">1 of 3</div>
+    <div class="col-4">5 column</div>
+    <div class="col">1 0f 3 </div>
+  </div>
+</div>
+
+<div class="container text-center mt-5 border border-primary p-3">
+  <div class="row justify-content-md-center p-3 border border-1">
+    <div class="col col-lg-2 bg-info">
+      1 of 3
+    </div>
+    <div class="col-md-auto border border-2">
+      Variable width content
+    </div>
+    <div class="col col-lg-2">
+      3 of 3
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col-md-auto border border-3">
+      Variable width content
+    </div>
+    <div class="col col-lg-2">
+      3 of 3
+    </div>
+  </div>
+</div>
+
+<!--nesteing-->
+<div class="cotainer mt-3 text-center">
+<div class="row">
+  <div class="col-sm-3 bg-info">
+    level 1: .col-sm-3
+  </div>
+  <div class="col-sm-9">
+<div class="row">
+  <div class="col-8 col-sm-6 bg-danger">
+    level 2: .col-8 .col-sm-6
+  </div>
+  <div class="col-4 col-sm-6 bg-info">
+    level 2: .col-4 .col-sm-6
+  </div>
+</div>
+  </div>
+</div>
+</div>
+
+
+
+<!--Description list alignment-->
+
+<dl class="row mt-5">
+  <dt class="col-sm-3">Description lists</dt>
+  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+  <dt class="col-sm-3">Term</dt>
+  <dd class="col-sm-9">
+    <p>Definition for the term.</p>
+    <p>And some more placeholder definition text.</p>
+  </dd>
+
+  <dt class="col-sm-3">Another term</dt>
+  <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
+
+  <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+  <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+
+  <dt class="col-sm-3">Nesting</dt>
+  <dd class="col-sm-9">
+    <dl class="row">
+      <dt class="col-sm-4">Nested definition list</dt>
+      <dd class="col-sm-8">I heard you like definition lists. Let me put a</dd>
+    </dl>
+  </dd>
+</dl>
+
+  </body>
+</html>
+
+<!--Grid options-->
+<!--
+Extra small (xs)..................(automatically applies to screen sizes smaller than 576px)
+Small (sm)...........(automatically applies to screen sizes between 576px and 767px)
+Medium (md)............(automatically applies to screen sizes between 768px and 991px)
+Large (lg).............(automatically applies to screen sizes between 992px and 1199px)
+Extra large (xl)...................(automatically applies to screen sizes larger than 1200px)
+Extra extra large (xxl).................(automatically applies to screen sizes larger than 1400px)
+
+-->
+
+<!--BASIC STRUCTURE:
+The grid system consists of two main components:
+
+Rows:
+Rows are horizontal containers that hold the columns. The .row class is used to create a row.
+
+Columns:
+Columns are the building blocks of the grid. The .col-* classes are used to define how many columns a particular element should span in a row. By default, there are 12 equal-width columns in the grid, and you can create layouts by combining these columns.-->
+
+<!--CONTAINER
+
+Every layout in Bootstrap starts with a container. Containers come in two types:
+
+.container: Fixed-width container, which adapts to the screen width up to a certain maximum.
+.container-fluid: Full-width container that spans the entire width of the viewport.
+
+-->
+
+<!--BREAKPOINTS
+Breakpoints:
+Bootstrap's grid system is responsive, meaning it adjusts the layout based on the width of the user's device. It uses breakpoints to define how many columns a layout should display on different screen sizes. Bootstrap has predefined classes for each breakpoint that you can use to customize your layout for various devices.
+
+The available breakpoints in Bootstrap are:
+
+1. Extra Small (xs):
+Default behavior for screens smaller than 576px (phones in portrait mode).
+No specific class required for xs since it’s the default, but .col- is used for all sizes.
+
+2. Small (sm):
+For screens 576px and larger (small devices like tablets).
+Example class: .col-sm-*
+
+3.Medium (md):
+For screens 768px and larger (larger tablets or small desktop screens).
+Example class: .col-md-*
+
+4.Large (lg):
+For screens 992px and larger (desktop screens).
+Example class: .col-lg-*
+
+5.Extra Large (xl):
+For screens 1200px and larger (larger desktop screens).
+Example class: .col-xl-*
+
+6.Extra Extra Large (xxl):
+For screens 1400px and larger (used for very large screens like large desktops).
+Example class: .col-xxl-*
+-->

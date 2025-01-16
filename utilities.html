@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-danger">Hello, world!</h1>
+    <!--background color-->
+    <div class="p-3 mb-3 bg-primary text-white">hello</div>
+    <div class="p-3 mb-2 bg-primary-subtle text-primary-emphasis">bye</div>
+    <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+    <div class="p-3 mb-2 bg-secondary-subtle text-secondary-emphasis">
+      .bg-secondary-subtle
+    </div>
+    <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+    <div class="p-3 mb-2 bg-success-subtle text-success-emphasis">
+      .bg-success-subtle
+    </div>
+    <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+    <div class="p-3 mb-2 bg-danger-subtle text-danger-emphasis">
+      .bg-danger-subtle
+    </div>
+    <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+    <div class="p-3 mb-2 bg-warning-subtle text-warning-emphasis">
+      .bg-warning-subtle
+    </div>
+    <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+    <div class="p-3 mb-2 bg-info-subtle text-info-emphasis">
+      .bg-info-subtle
+    </div>
+    <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+    <div class="p-3 mb-2 bg-light-subtle text-light-emphasis">
+      .bg-light-subtle
+    </div>
+    <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+    <div class="p-3 mb-2 bg-dark-subtle text-dark-emphasis">
+      .bg-dark-subtle
+    </div>
+    <div class="p-3 mb-2 bg-body-secondary">.bg-body-secondary</div>
+    <div class="p-3 mb-2 bg-body-tertiary">.bg-body-tertiary</div>
+    <div class="p-3 mb-2 bg-body text-body">.bg-body</div>
+    <div class="p-3 mb-2 bg-black text-white">.bg-black</div>
+    <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+    <div class="p-3 mb-2 bg-transparent text-body">.bg-transparent</div>
+
+    <!--opacity-->
+    <div class="bg-success p-2 text-white">
+      This is default success background
+    </div>
+    <div class="bg-success p-2 text-white bg-opacity-75">
+      This is 75% opacity success background
+    </div>
+    <div class="bg-success p-2 text-dark bg-opacity-50">
+      This is 50% opacity success background
+    </div>
+    <div class="bg-success p-2 text-dark bg-opacity-25">
+      This is 25% opacity success background
+    </div>
+    <div class="bg-success p-2 text-dark bg-opacity-10">
+      This is 10% opacity success background
+    </div>
+
+    <!--border-->
+    <div class="border border-0 border-primary">border-0</div>
+    <div class="border border-1 border-primary">border-1</div>
+    <div class="border border-2 border-primary">border-2</div>
+    <div class="border border-3 border-primary">border-3</div>
+    <div class="border border-4 border-primary">border-4</div>
+    <div class="border border-5 border-primary">border-5</div>
+
+    <div class="mb-4">
+      <label for="exampleFormControlInput1" class="form-label"
+        >Email address</label
+      >
+      <input
+        type="email"
+        class="form-control border-success"
+        id="exampleFormControlInput1"
+        placeholder="name@example.com"
+      />
+    </div>
+
+    <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
+      Dangerous heading
+    </div>
+
+    <div
+      class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end"
+    >
+      Changing border color and width
+    </div>
+
+    <img
+      src="img.webp"
+      class="rounded-circle"
+      alt=""
+      width="100"
+      height="100"
+    />
+
+    <!--colors-->
+
+    <div class="text-primary">This is default primary text</div>
+    <div class="text-primary text-opacity-75">
+      This is 75% opacity primary text
+    </div>
+    <div class="text-primary text-opacity-50">
+      This is 50% opacity primary text
+    </div>
+    <div class="text-primary text-opacity-25">
+      This is 25% opacity primary text
+    </div>
+
+    <!--display properties-->
+
+    <!--
+none
+inline
+inline-block
+block
+grid
+inline-grid
+table
+table-cell
+table-row
+flex
+inline-flex
+
+-->
+
+    <div class="d-inline p-2 text-bg-primary">d-inline</div>
+    <div class="d-inline p-2 text-bg-dark">d-inline</div>
+
+    <span>This is inline</span>
+    <a href="#">Link</a>
+
+    <span
+      style="
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        background: lightblue;
+      "
+      >Inline-block</span
+    >
+
+    <div style="background: lightblue">This is block</div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr)">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+    </div>
+
+    <div style="display: inline-grid; grid-template-columns: 1fr 1fr">
+      <span>1</span>
+      <span>2</span>
+    </div>
+
+    <div style="display: table">
+      <div style="display: table-row">
+        <div style="display: table-cell">Cell 1</div>
+        <div style="display: table-cell">Cell 2</div>
+        <div style="display: table-cell">Cell 1</div>
+        <div style="display: table-cell">Cell 2</div>
+        <div style="display: table-cell">Cell 1</div>
+        <div style="display: table-cell">Cell 2</div>
+      </div>
+    </div>
+
+    <div class="d-inline-flex p-2">I'm an inline flexbox container!</div>
+
+    <div
+      class="d-flex flex-column mb-3 bg-info-subtle border border-1 border-info"
+    >
+      <div class="p-2">Flex item 1</div>
+      <div class="p-2">Flex item 2</div>
+      <div class="p-2">Flex item 3</div>
+    </div>
+    <div class="d-flex flex-row-reverse bg-dark-subtle">
+      <div class="p-2">Flex item 1</div>
+      <div class="p-2">Flex item 2</div>
+      <div class="p-2">Flex item 3</div>
+    </div>
+
+    <!--justify content-->
+    <div class="d-flex justify-content-start">..start.</div>
+    <div class="d-flex justify-content-end">..end.</div>
+    <div class="d-flex justify-content-center">..center.</div>
+    <div class="d-flex justify-content-between">..between.</div>
+    <div class="d-flex justify-content-around">..around.</div>
+    <div class="d-flex justify-content-evenly">..evenly.</div>
+
+    <!---
+
+Utility	        Purpose	          Example Class         	Values
+m (margin)	    Set margin	          m-3	                      0, 1, 2, 3, 4, 5, auto
+p (padding)	    Set padding	          p-2	                0, 1, 2, 3, 4, 5
+mx, my	        Horizontal/vertical   margin	mx-auto	Same as above
+px, py	        Horizontal/vertical   padding	py-4	Same as above
+mt, mb, ml, mr	Top, bottom, left, 
+                 right margin	             mt-2	Same as above
+pt, pb, pl, pr	Top, bottom, left, right padding	pb-3	Same as above
+
+
+
+
+
+
+
+
+
+|                          
+|
+|
+|
+|
+|----vertical line      
+|
+|
+|
+|
+|
+
+                  |
+                  | 
+                  |
+                  |
+                  |
+                  |
+                  |
+                  |
+                Horizontal line                                              
+______________________________________
+
+
+
+
+-->
+<div class="d-flex flex-wrap-reverse" style="width: 300px; border: 1px solid;">
+  <div style="width: 100px; height: 50px; background: lightblue; margin: 5px;">1</div>
+  <div style="width: 100px; height: 50px; background: lightcoral; margin: 5px;">2</div>
+  <div style="width: 100px; height: 50px; background: lightgreen; margin: 5px;">3</div>
+</div>
+
+
+<!--float-->
+<div class="float-sm-end">Float end on viewports sized SM (small) or wider</div><br>
+<div class="float-md-end">Float end on viewports sized MD (medium) or wider</div><br>
+<div class="float-lg-end">Float end on viewports sized LG (large) or wider</div><br>
+<div class="float-xl-end">Float end on viewports sized XL (extra large) or wider</div><br>
+<div class="float-xxl-end">Float end on viewports sized XXL (extra extra large) or wider</div><br>
+
+
+
+
+
+
+
+
+<div class="min-w-0 bg-light border" style="overflow: hidden; width: 50px;">This text will shrink</div>
+<div class="max-w-100 bg-light border" style="width: 300px;">This text will not grow beyond 100% of the container</div>
+<div class="min-h-100 bg-light border" style="height: 300px;">Full height constraint</div>
+
+
+
+
+
+<!--interations-->
+<p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
+<p class="user-select-auto">This paragraph has default select behavior.</p>
+<p class="user-select-none">This paragraph will not be selectable when clicked by the user.</p>
+
+
+
+<!--links-->
+<p><a class="link-opacity-10" href="#">Link opacity 10</a></p>
+<p><a class="link-opacity-25" href="#">Link opacity 25</a></p>
+<p><a class="link-opacity-50" href="#">Link opacity 50</a></p>
+<p><a class="link-opacity-75" href="#">Link opacity 75</a></p>
+<p><a class="link-opacity-100" href="#">Link opacity 100</a></p>
+
+
+<p><a class="link-opacity-10-hover" href="#">Link hover opacity 10</a></p>
+<p><a class="link-opacity-25-hover" href="#">Link hover opacity 25</a></p>
+<p><a class="link-opacity-50-hover" href="#">Link hover opacity 50</a></p>
+<p><a class="link-opacity-75-hover" href="#">Link hover opacity 75</a></p>
+<p><a class="link-opacity-100-hover" href="#">Link hover opacity 100</a></p>
+
+
+<p><a href="#" class="link-underline-primary">Primary underline</a></p>
+<p><a href="#" class="link-underline-secondary">Secondary underline</a></p>
+<p><a href="#" class="link-underline-success">Success underline</a></p>
+<p><a href="#" class="link-underline-danger">Danger underline</a></p>
+<p><a href="#" class="link-underline-warning">Warning underline</a></p>
+<p><a href="#" class="link-underline-info">Info underline</a></p>
+<p><a href="#" class="link-underline-light">Light underline</a></p>
+<p><a href="#" class="link-underline-dark">Dark underline</a></p>                                                         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!--Alignment utilities 
+
+Alignment utilities are used for text, flex, and grid alignment.
+
+Text Alignment:
+text-start → Align text to the left.
+text-center → Center-align text.
+text-end → Align text to the right.
+Vertical Alignment:
+align-baseline, align-top, align-middle, align-bottom, align-text-top, align-text-bottom → Align inline elements vertically.
+
+
+-->
+
+<!--
+Sides:
+
+t = top
+b = bottom
+l = left
+r = right
+x = left and right
+y = top and bottom
+No side (e.g., m-3) applies to all sides.
+
+-->
+
+<!--Breakpoints: Optional (e.g., sm, md, lg, xl, xxl)
+
+Size:
+
+0 = 0
+1 = 0.25rem
+2 = 0.5rem
+3 = 1rem
+4 = 1.5rem
+5 = 3rem
+auto = auto (for margins)-->
+
+<!--. Color Utilities
+Bootstrap offers predefined color utilities for backgrounds, text, and borders.
+
+Text Colors:
+text-primary, text-secondary, text-success, text-danger, text-warning, text-info, text-light, text-dark, text-body, text-muted, text-white
+
+Background Colors:
+bg-primary, bg-secondary, bg-success, bg-danger, bg-warning, bg-info, bg-light, bg-dark, bg-white
+
+Border Colors:
+border-primary, border-secondary, border-success, border-danger, border-warning, border-info, border-light, border-dark, border-white-->
+
+<!--Flex Alignment
+
+Justify Content:
+justify-content-start, justify-content-center, justify-content-end, justify-content-between, justify-content-around, justify-content-evenly
+Align Items:
+align-items-start, align-items-center, align-items-end
+Align Self:
+align-self-start, align-self-center, align-self-end
+
+
+
+
+-->
